@@ -14,6 +14,9 @@
 // Models
 Route::model('user', 'User');
 
-Route::get('profile/{user}', function(User $user) {
-	return Response::json($user);
+Route::group(array('prefix' => 'api'), function() {
+    Route::get('profile/{user}', function(User $user) {
+        return Response::json($user);
+    });
 });
+

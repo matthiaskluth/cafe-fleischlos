@@ -43,7 +43,7 @@ class UserTest extends TestCase
         $user = FactoryMuff::create('User');
         $user->save();
 
-        $this->call('GET', 'profile/' . $user->id);
+        $this->call('GET', 'api/profile/' . $user->id);
 
         $this->assertResponseOk();
     }
