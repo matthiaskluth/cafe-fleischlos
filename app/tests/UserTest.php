@@ -30,7 +30,7 @@ class UserTest extends TestCase
     public function testCreatingAUserWhite()
     {
         $user = FactoryMuff::create('User');
-        $user->save();
+        $this->assertTrue($user->save());
     }
 
     /**

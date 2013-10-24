@@ -32,10 +32,10 @@ class User extends \LaravelBook\Ardent\Ardent
         'password_confirmation' =>    'abc123',
     );
 
-    public static $rules = array(
-        'username'              =>    'required|alpha_num',
-        'email'                 =>    'required|email|',
+    /*public static $rules = array(
+        'username'              =>    'required|alpha',
+        'email'                 =>    'required|email',
         'password'              =>    'required|alpha_num|between:6,32|confirmed',
         'password_confirmation' =>    'required|alpha_num|between:6,32'
-    );
+    );*/
 }
